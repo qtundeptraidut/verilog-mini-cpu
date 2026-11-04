@@ -12,6 +12,9 @@ This version fixes the previous implementation and adds a self-checking testbenc
 
 <img width="1559" height="423" alt="image" src="https://github.com/user-attachments/assets/6b4cc26e-997a-47eb-8cc5-45525a6d977d" />
 
+<img width="2048" height="1772" alt="image" src="https://github.com/user-attachments/assets/abc5117e-076f-4dd5-9a92-0637111165d5" />
+
+
 ## Repository layout
 
 ```text
