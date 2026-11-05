@@ -1,8 +1,6 @@
-# miniCPU-FPGA-VRL
+# uart-verilog-mini-cpu
 
-A mini 8-bit CPU written in Verilog and controlled over UART.
-
-This version fixes the previous implementation and adds a self-checking testbench.
+A mini 8-bit CPU written in Verilog and controlled over UART, targeting FPGA.
 
 ## Clock review
 
@@ -77,11 +75,11 @@ SUMMARY: ALL TESTS PASSED
 py -m pip install pyserial
 ```
 
-2. Edit `terminal/py` and set the correct `COM_PORT`.
+2. Edit `terminal/terminal.py` and set the correct `COM_PORT`.
 3. Run:
 
 ```powershell
-py terminal/py
+py terminal/terminal.py
 ```
 
 4. Use the menu to send bytes, for example:
@@ -95,12 +93,3 @@ or send the raw bytes:
 ```text
 05 03 00
 ```
-
-## Changes
-
-- Rebuilt into separate RTL modules.
-- Fixed UART receiver so back-to-back bytes are accepted.
-- Fixed RAM write/read mux so the mode byte is stored correctly.
-- CPU now waits for `system_run` and returns to `FETCH` after HALT.
-- Fixed ALU compare result for `A == B`.
-- Added a self-checking testbench and `run_tb.ps1`.
